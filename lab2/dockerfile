@@ -1,7 +1,0 @@
-FROM ubuntu
-RUN apt update
-RUN apt install gcc -y
-RUN apt install nano -y
-COPY lab2.c .
-RUN gcc lab2.c -o lab2
-CMD ./lab2
