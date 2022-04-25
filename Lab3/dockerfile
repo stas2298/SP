@@ -1,0 +1,10 @@
+FROM ubuntu
+COPY lab3.c .
+COPY lab3.s .
+RUN apt-get update
+RUN apt-get install -y nano
+RUN apt-get install -y binutils
+RUN apt-get update
+RUN apt-get install -y gcc-multilib
+RUN apt-get update
+RUN apt-get install -y g++
